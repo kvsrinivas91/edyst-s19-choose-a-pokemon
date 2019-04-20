@@ -15,35 +15,81 @@ body {
 .grid-container {
   display: inline-grid;
   grid-template-columns: auto auto auto;
-  background-color: #2196F3;
+  background-color: rgb(255, 255, 255);
   padding: 10px;
 }
 
 .grid-item {
   background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.8);
   padding: 20px;
   font-size: 30px;
   text-align: center;
+}
 
-/* Remove extra left and right margins, due to padding */
-.row {margin: 0 -5px;}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+.grid-item1 {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
 }
 
 
 
+.id1{
+  float: left;
+  background: 	#4BAE74;
+  color: white;
+  font-size: 16px;
+  padding: 2px;
+  border-radius: 2px;
+  font-family: monospace;
+}
+
+.id2{
+  float: left;
+  background: 	#CA3C40;
+  color: white;
+  font-size: 16px;
+  padding: 2px;
+  border-radius: 2px;
+  font-family: monospace;
+}
+
+.id3{
+  float: left;
+  background: 	#328FD8;
+  color: white;
+  font-size: 16px;
+  padding: 2px;
+  border-radius: 2px;
+  font-family: monospace;
+}
+
 /* Style the counter cards */
-.card {
-  box-shadow: 0 4px 8px 0 rgba(3, 168, 218, 0.2);
+.card1 {
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
   padding: 16px;
   text-align: center;
-  background-color: #f1f1f1;
+  background-color: 	#E4FCEC;
+  border-radius: 8px;
+}
+
+.card2 {
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: 	#FFEBEC;
+  border-radius: 8px;
+}
+
+.card3 {
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: 	#BDDEFD;
+  border-radius: 8px;
 }
 </style>
 </head>
@@ -60,14 +106,13 @@ body {
     </script>
 
 <div class="grid-container">
-<div class="grid-item">
+<div class="grid-item1">
 <div class="row">
   <div class="column">
-    <div class="card">
-      
+    <div class="card1">
+      <p class="id1">#001</p>
         <img height="200px" src="https://cdn.bulbagarden.net/upload/thumb/2/21/001Bulbasaur.png/375px-001Bulbasaur.png" >
       <h3>Bulbasaur</h3>
-      <p>#001</p>
     </div>
   </div>
 </div>
@@ -75,19 +120,19 @@ body {
 
 <div class="grid-item">
   <div class="column">
-    <div class="card">
+    <div class="card2">
+        <p class="id2">#004</p>
         <img  height="200px" src="https://cdn.bulbagarden.net/upload/thumb/7/73/004Charmander.png/250px-004Charmander.png" >
       <h3>Charmander</h3>
-      <p>#004</p>
     </div>
   </div>
 </div>
 <div class="grid-item">
   <div class="column">
-    <div class="card">
+    <div class="card3">
+        <p class="id3">#007</p>
         <img  height="200px" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png" >
       <h3>Squirtle</h3>
-      <p>#007</p>
     </div>
   </div>
 </div>
